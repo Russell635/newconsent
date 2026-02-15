@@ -14,6 +14,7 @@ import { ConnectionTest } from './pages/auth/ConnectionTest';
 import { AdminDashboardPage } from './pages/admin/DashboardPage';
 import { SpecialtiesPage } from './pages/admin/SpecialtiesPage';
 import { SpecialtyDetailPage } from './pages/admin/SpecialtyDetailPage';
+import { OperationDetailPage } from './pages/admin/OperationDetailPage';
 import { OperationEditorPage } from './pages/admin/OperationEditorPage';
 import { VersionHistoryPage } from './pages/admin/VersionHistoryPage';
 import { UsersPage } from './pages/admin/UsersPage';
@@ -73,6 +74,7 @@ function App() {
             <Route index element={<AdminDashboardPage />} />
             <Route path="master-list" element={<SpecialtiesPage />} />
             <Route path="master-list/:specialtyId" element={<SpecialtyDetailPage />} />
+            <Route path="master-list/:specialtyId/:operationId" element={<OperationDetailPage />} />
             <Route path="master-list/:specialtyId/new" element={<OperationEditorPage />} />
             <Route path="master-list/:specialtyId/edit/:procedureId" element={<OperationEditorPage />} />
             <Route path="master-list/:specialtyId/history/:procedureId" element={<VersionHistoryPage />} />
