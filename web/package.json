@@ -11,7 +11,7 @@
     "test:e2e": "npx playwright test",
     "test:seed": "npx tsx tests/seed.ts",
     "test:cleanup": "npx tsx tests/cleanup.ts",
-    "import:master-data": "npx tsx scripts/import-master-data.ts"
+    "seed:master-data": "npx tsx scripts/seed-master-data.ts"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
